@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A scroll-driven hero animation built with HTML, CSS and vanilla JavaScript.">
+  <title>ITZFIZZ — Scroll-Driven Hero</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="ITZFIZZ home">ITZ<span>FIZZ</span><i>.</i></a>
+    <a class="header-link" href="#journey">THE EXPERIENCE <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main>
+    <section class="scroll-stage" id="journey" aria-label="Scroll-driven hero animation">
+      <div class="hero sticky-hero">
+        <div class="hero-top">
+          <p class="eyebrow reveal">ENGINEERED FOR THE EXTRAORDINARY</p>
+          <h1 class="headline reveal" aria-label="Welcome to ITZFIZZ">
+            <span>W E L C O M E</span>
+            <span class="headline-second">I T Z F I Z Z<span class="period">.</span></span>
+          </h1>
+          <p class="hero-copy reveal">Every journey deserves a little more <em>fizz.</em></p>
+        </div>
+
+        <div class="road-area" aria-hidden="true">
+          <div class="sun"></div>
+          <div class="horizon"></div>
+          <div class="road">
+            <div class="road-line"></div>
+          </div>
+          <div class="car-wrap" id="car">
+            <div class="car-shadow"></div>
+            <div class="car">
+              <div class="car-roof"></div>
+              <div class="car-window"></div>
+              <div class="car-body"></div>
+              <div class="car-front"></div>
+              <div class="car-light"></div>
+              <div class="wheel wheel-back"><span></span></div>
+              <div class="wheel wheel-front"><span></span></div>
+            </div>
+          </div>
+          <div class="road-label label-left">MADE TO MOVE</div>
+          <div class="road-label label-right">SCROLL TO EXPLORE ↓</div>
+        </div>
+
+        <div class="stats" aria-label="Impact statistics">
+          <article class="stat reveal">
+            <p class="stat-number"><span class="counter" data-target="98">0</span><span>%</span></p>
+            <p class="stat-label">HAPPY DRIVERS</p>
+            <p class="stat-detail">A feeling that stays with you.</p>
+          </article>
+          <article class="stat reveal">
+            <p class="stat-number"><span class="counter" data-target="24">0</span><span>/7</span></p>
+            <p class="stat-label">READY FOR MORE</p>
+            <p class="stat-detail">Your next chapter starts anytime.</p>
+          </article>
+          <article class="stat reveal">
+            <p class="stat-number"><span class="counter" data-target="100">0</span><span>%</span></p>
+            <p class="stat-label">PURE EXCITEMENT</p>
+            <p class="stat-detail">Designed around the joy of motion.</p>
+          </article>
+        </div>
+
+        <div class="scroll-progress" aria-hidden="true"><span id="progress-bar"></span></div>
+      </div>
+    </section>
+
+    <section class="after-section">
+      <p class="eyebrow">THE ROAD IS YOURS</p>
+      <h2>Good things happen<br><em>when you keep moving.</em></h2>
+      <p class="after-copy">This demo uses scroll position to move the car, shift the scene, and reveal the details. Scroll up and down to see the animation respond in both directions.</p>
+      <a class="cta" href="#journey">TAKE ANOTHER LOOK <span aria-hidden="true">↑</span></a>
+    </section>
+  </main>
+
+  <footer><span>ITZFIZZ — MOTION STUDY</span><span>BUILT WITH HTML · CSS · JAVASCRIPT</span></footer>
+</body>
+</html>
